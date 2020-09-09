@@ -4,7 +4,7 @@ $("ul").on("click", "li", function() {
 });
 
 // click on x to delete todos
-$("span").on("click", function(event) {
+$("ul").on("click", "span", function(event) {
 	$(this).parent().fadeOut(500, function() {
 		$(this).remove();
 	});
