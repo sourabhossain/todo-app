@@ -6,7 +6,7 @@
 
 html,
 body {
-	font-family: Roboto;
+  font-family: Roboto;
   background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
@@ -56,13 +56,14 @@ li {
 	height: 40px;
 	line-height: 40px;
 	color: #666666;
+	text-transform: uppercase;
 }
 
 li:nth-child(2n){
 	background: #f7f7f7;
 }
 
-span {
+li span {
 	background: #e74c3c;
 	height: 40px;
 	margin-right: 20px;
@@ -70,8 +71,12 @@ span {
 	color: white;
 	width: 0;
 	display: inline-block;
-	transition: 0.2s linear;
 	opacity: 0;
+	transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
 }
 
 li:hover span {
